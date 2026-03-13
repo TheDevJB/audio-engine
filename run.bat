@@ -1,3 +1,4 @@
 @echo off
-javac -d out sourcepath src src\demo\Main.java
-java -cp ou demo.Main
+dir /s /b src\*.java > sources.txt
+javac -d out @sources.txt
+java -cp out demo.Main
