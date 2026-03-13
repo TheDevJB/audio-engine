@@ -2,10 +2,18 @@ package engine;
 
 public class AudioEngine {
 
-    public processing() {
+    private String name;
 
-        private final int x = 10;
-        System.out.println("testing output" + simple);
-        return x;
+    public AudioEngine(String name) {
+        this.name = name;
     }
+
+    public void start() {
+        System.out.println("AudEngine'" + name + "' started");
+    }
+
+    public void stop() {
+        System.out.println("AudEngine'" + name + "' stopped");
+    }
+
 }
